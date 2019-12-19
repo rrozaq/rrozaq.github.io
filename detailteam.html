@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>La Liga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#00897B" />
+</head>
+
+<body>
+
+    <nav class="teal darken-2" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">LA Liga</a>
+            <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+
+    <div class="container" id="body">
+        <div class="row">
+            <div class="col s12 m12">
+                <h2 class="header">Detail Team</h2>
+
+                <div class="center-align" id="detail_team">
+                </div>
+
+                <ul class="collection with-header">
+                    <li class="collection-header">
+                        <h4>Player</h4>
+                    </li>
+                    <div id="team_player"></div>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/detailteam.js"></script>
+    <script src="js/loadServiceWorker.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            teamById();
+        });
+    </script>
+
+</body>
+
+</html>

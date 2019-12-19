@@ -1,0 +1,22 @@
+{
+    "name": "Spanish La Liga",
+    "short_name": "La Liga",
+    "description": "Aplikasi Information La Liga versi beta",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00796B",
+    "theme_color": "#00897B",
+    "icons": [
+        {
+            "src": "laliga.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "laliga.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          }
+    ],
+    "gcm_sender_id": "635413979738"
+}
